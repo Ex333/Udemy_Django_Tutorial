@@ -1,0 +1,39 @@
+# 🔐 ENV (sekrety)
+.env
+.env.*
+!.env.example
+
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 📦 Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# 🗄️ Django
+*.log
+
+# 🗃️ SQLite (LOCAL DB)
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+
+# 📁 Static / media (generowane)
+staticfiles/
+media/
+
+# 🧠 IDE
+.vscode/
+.idea/
+
+# 🖥️ System
+.DS_Store
+Thumbs.db
+
+# 🧪 Test / coverage
+.coverage
+htmlcov/
