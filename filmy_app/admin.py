@@ -3,4 +3,6 @@ from .models import Film
 
 @admin.register(Film)
 class FilmAdmin(admin.ModelAdmin):
-    pass
+    list_display = ["title", "description", "year"]
+    search_fields = ["title", "year"]
+    list_filter = ["title", "year"]
