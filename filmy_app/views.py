@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Film
 
 def home(request):
-    #return HttpResponse("To jest nasz pierwszy TEST!")
-    return render(request, "base.html")
+    film = Film.objects.all()
+    return render(request, "filmy.html", {'filmy': film})
