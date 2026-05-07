@@ -46,5 +46,5 @@ class Film(models.Model):
         verbose_name_plural = "Filmy"
 
     def __str__(self):
-        return self.title
+        return f"{self.title} {self.year}"
    

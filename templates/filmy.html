@@ -1,9 +1,16 @@
-{% extends "base.html" %}
-{% block content %}
-    <h1>Lista filmów:</h1>
+{% extends 'base.html' %}
+{% block content%}
+{% if filmy|length == 0  %}
+    <h1> Brak filmów!</h1>
+{% else %}
+    <h1> Takie sa </h1>
 
-    {% for film in filmy %}
-        <h1>{{ film }}</h1>
-    {% endfor %}
+{% endif %}
+
+<h1> Witaj na mojej stronie o to moje filmy!:</h1>
+<h2> Ilosc filmów w Bazie Danych: {{ filmy|length }}</h2>
+{%for film in filmy %}
+    <p>{{ film }}</p>
+{% endfor %}
 
 {% endblock %}
